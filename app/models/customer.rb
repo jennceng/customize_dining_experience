@@ -5,6 +5,6 @@ class Customer < ActiveRecord::Base
   validates :last_name, presence: true
 
   def name
-    "#{last_name}, #{first_name}"
+    "#{first_name} #{last_name}"
   end
 end
