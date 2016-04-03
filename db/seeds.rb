@@ -10,5 +10,7 @@ phil = Customer.create(first_name: 'Phil', last_name: 'Coleson')
 
 miso = Ingredient.create(name: 'miso')
 vanilla = Ingredient.create(name: 'vanilla')
+chocolate = Ingredient.create(name: 'chocolate')
+
 preference1 = Preference.create(customer: phil, ingredient: miso, likes: true)
 preference1 = Preference.create(customer: ben, ingredient: miso, likes: false)

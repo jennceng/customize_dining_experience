@@ -6,9 +6,4 @@
   <% end %>
 </ul>
 
-<h2>Add New Ingredient</h2>
-<%= form_for @ingredient do |f| %>
-  <%= f.label :name, 'Ingredient' %>
-  <%= f.text_field :name %>
-  <%= f.submit 'Add' %>
-<% end %>
+<%= link_to 'Add New Ingredient', new_ingredient_path %>

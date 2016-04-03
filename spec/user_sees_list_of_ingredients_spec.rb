@@ -14,15 +14,6 @@ feature "user sees a list of ingredients" do
     expect(page).to have_content mushrooms.name
   end
 
-  # add an ajax feature later?
-  scenario "user can add a new ingredient from the index page" do
-    visit ingredients_path
-    expect(page).to have_content "Add New Ingredient"
-    fill_in "Ingredient", with: 'leeks'
-    click_on "Add"
-    expect(page).to have_content "leeks"
-  end
 
-  # show error for blank entry
 
 end
