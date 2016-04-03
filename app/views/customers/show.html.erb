@@ -1,0 +1,17 @@
+<h1><%= @customer.name %></h1>
+
+<%= @vip %>
+
+<p> This customer prefers: </p>
+<% @likes.each do |like| %>
+  <li>
+    <%= like.ingredient.name %>
+  </li>
+<% end %>
+
+<p> This customer does not enjoy </p>
+<% @dislikes.each do |dislike| %>
+  <li>
+    <%= dislike.ingredient.name %>
+  </li>
+<% end %>
