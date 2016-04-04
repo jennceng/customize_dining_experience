@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem "chartkick"
 
 gem 'rake', '10.4.2'
 
