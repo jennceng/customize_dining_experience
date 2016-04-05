@@ -14,7 +14,7 @@ class IngredientsController < ApplicationController
   end
 
   def index
-    @ingredients = Ingredient.all.sort_by{|i| i.times_recorded}
+    @ingredients = Ingredient.all.sort_by{|i| -i.times_recorded}
     @total_stats = all_stats(@ingredients)
   end
 

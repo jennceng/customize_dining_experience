@@ -11,6 +11,7 @@
     <%= csrf_meta_tags %>
   </head>
 
+
   <body>
     <div>
       <% flash.each do |name, msg| %>
@@ -20,7 +21,38 @@
       <% end %>
     </div>
 
-    <%= yield %>
-    <%= javascript_include_tag "application" %>
+    <div class="container">
+
+      <div class="small-12 columns">
+
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="#">Menu-ize</a></h1>
+            </li>
+          </ul>
+
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <!-- <li class="active"><a href="#">Right Button Active</a></li> -->
+              <li class="has-dropdown">
+                <a href="#">Jump To:</a>
+                <ul class="dropdown">
+                  <li><a href="/customers">Customers</a></li>
+                  <li><a href="/ingredients">Ingredients</a></li>
+                </ul>
+              </li>
+            </ul>
+            </section>
+        </nav>
+
+        <div class="small-10 columns small-centered">
+          <%= yield %>
+        </div>
+        <%= javascript_include_tag "application" %>
+
+      </div>
+    </div>
   </body>
 </html>
