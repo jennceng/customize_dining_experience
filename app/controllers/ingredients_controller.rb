@@ -19,6 +19,7 @@ class IngredientsController < ApplicationController
   end
 
   def new
+    @ingredients = Ingredient.all
     @ingredient = Ingredient.new
   end
 
