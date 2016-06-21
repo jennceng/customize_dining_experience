@@ -1,6 +1,6 @@
 <h1>List of Customers:</h1>
 
-<ul>
+<ul class="cutomers">
   <% @customers.each do |customer| %>
     <li>
       <%= link_to "#{customer.last_name}, #{customer.first_name}", customer_path(customer) %>
