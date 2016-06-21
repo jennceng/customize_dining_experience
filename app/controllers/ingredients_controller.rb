@@ -28,7 +28,7 @@ class IngredientsController < ApplicationController
       flash[:success] = 'Ingredient successfully saved'
       redirect_to ingredients_path
     else
-      @errors = @question.errors.full_messages.join", "
+      @errors = @ingredient.errors.full_messages.join", "
       flash[:error] = "#{@errors}"
       render :new
     end
