@@ -1,8 +1,8 @@
 <h1>Ingredients:</h1>
 
-<%= bar_chart @total_stats, stacked: true %> 
+<%= bar_chart @total_stats, stacked: true %>
 
-<ul>
+<ul class="ingredients">
   <% @ingredients.each do |ingredient| %>
     <li> <%= link_to ingredient.name, ingredient_path(ingredient) %> </li>
   <% end %>
